@@ -1,14 +1,11 @@
 import streamlit as st
-import os
 
-code = ''' 
-
-# List of tutorial steps with image paths (relative paths from your GitHub repo)
+# List of tutorial steps with relative image paths
 steps = [
     {
         "title": "Step 1: Open the GCash App",
         "content": "Ensure the GCash app is installed on your smartphone. Log in using your registered mobile number and 4-digit MPIN.",
-        "image": "images/step1.png"
+        "image": "images/step1.jpg"
     },
     {
         "title": "Step 2: Access the 'Send Money' Feature",
@@ -17,12 +14,12 @@ steps = [
     },
     {
         "title": "Step 3: Choose Express Send",
-        "content": "GCash offers several options for sending money:\\n- **Express Send**\\n- **Send via QR**\\n- **Send to Bank**",
+        "content": "GCash offers several options for sending money:\n- **Express Send**\n- **Send via QR**\n- **Send to Bank**",
         "image": "images/step3.png"
     },
     {
-        "title": "Step 4: Enter the Recipient registered GCash Mobile Number",
-        "content": "For Express Send: Input the recipient’s GCash mobile number.\\nFor Send via QR: Scan a QR code.\\nFor Send to Bank: Provide bank details.",
+        "title": "Step 4: Enter the Recipient's GCash Mobile Number",
+        "content": "For Express Send: Input the recipient’s GCash mobile number.\nFor Send via QR: Scan a QR code.\nFor Send to Bank: Provide bank details.",
         "image": "images/step4.png"
     },
     {
@@ -37,7 +34,7 @@ steps = [
     },
     {
         "title": "Step 7: Authentication Code",
-        "content": "You'll receive a text message from Gcash containing the authentication code.",
+        "content": "You'll receive a text message from GCash containing the authentication code.",
         "image": "images/step7.png"
     },
     {
@@ -82,5 +79,3 @@ def app():
 
 if __name__ == "__main__":
     app()
-'''
-
